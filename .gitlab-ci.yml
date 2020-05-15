@@ -106,9 +106,9 @@ test:integration:cli:
   <<: *integration
   script: yarn jest cli/test/integration
 
-# test:integration:node:
-#   <<: *integration
-#   script: yarn jest node/test/integration && yarn codecov -F node
+test:integration:node:
+  <<: *integration
+  script: yarn jest node/test/integration && yarn codecov -F node
 
 # test:cli:integration:dist:
 #   <<: *integration
